@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name – AI/ML PhD Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Social preview + description -->
+  <meta name="description" content="PhD student in AI/ML at the University of Pennsylvania. Research in uncertainty quantification, conformal prediction, and human–AI collaboration." />
+
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13Z5fgx5w4nXW/5xg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      /* You can tweak these to change the color palette */
+      --bg-base: #f7f4ff;         /* light lilac base */
+      --bg-accent: #e7f2ff;      /* soft blue accent */
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --accent: #5b6cff;         /* main accent (links, highlights) */
+      --accent-soft: #ffc3a6;    /* secondary accent (underlines, chips) */
+      --text-main: #18181b;
+      --text-muted: #5f6472;
+      --border-subtle: rgba(0, 0, 0, 0.04);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
+      --radius-large: 24px;
+      --radius-pill: 999px;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+
+      /* Soft layered “grainy-ish” background */
+      background:
+        radial-gradient(circle at 0% 0%, rgba(255, 195, 166, 0.4), transparent 60%),
+        radial-gradient(circle at 100% 0%, rgba(91, 108, 255, 0.25), transparent 55%),
+        radial-gradient(circle at 0% 100%, rgba(231, 242, 255, 0.5), transparent 60%),
+        linear-gradient(135deg, var(--bg-base), var(--bg-accent));
+      background-attachment: fixed;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* HEADER / NAV */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(
+        to bottom,
+        rgba(247, 244, 255, 0.96),
+        rgba(247, 244, 255, 0.84)
+      );
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding: 0.9rem 0;
+    }
+
+    .site-title {
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    .site-title span {
+      padding: 0.2rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    nav.main-nav {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.92rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav.main-nav a {
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-pill);
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    nav.main-nav a:hover {
+      background: rgba(91, 108, 255, 0.08);
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 1.1rem;
+    }
+
+    .social-links a {
+      width: 2rem;
+      height: 2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      color: var(--text-muted);
+    }
+
+    .social-links a:hover {
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* HERO / ABOUT */
+    main {
+      padding: 3rem 0 4rem;
+    }
+
+    .hero {
+      margin-top: 1rem;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.75rem;
+      padding: 2rem 1.9rem;
+      border-radius: var(--radius-large);
+      background: var(--card-bg);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border-subtle);
+    }
+
+    @media (min-width: 720px) {
+      .hero-card {
+        grid-template-columns: auto minmax(0, 1.6fr);
+        align-items: center;
+      }
+    }
+
+    .hero-photo-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.28);
+      background: #ddd;
+    }
+
+    .hero-text h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.9rem;
+    }
+
+    .hero-text .subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-text .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .pill {
+      padding: 0.15rem 0.75rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      background: rgba(91, 108, 255, 0.07);
+      border: 1px solid rgba(91, 108, 255, 0.15);
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .hero-text p {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 2.75rem;
+    }
+
+    section .section-card {
+      padding: 1.75rem 1.8rem;
+      border-radius: 1.4rem;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .section-description {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .pub-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .pub-item + .pub-item {
+      margin-top: 0.75rem;
+    }
+
+    .pub-title {
+      font-weight: 500;
+    }
+
+    .pub-authors,
+    .pub-venue {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* CV */
+    .cv-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.8rem;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.95rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 12px 24px rgba(91, 108, 255, 0.35);
+    }
+
+    .btn-primary:hover {
+      text-decoration: none;
+      filter: brightness(1.04);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.85);
+      border-color: rgba(0, 0, 0, 0.05);
+      color: var(--text-muted);
+    }
+
+    .btn-ghost:hover {
+      text-decoration: none;
+      background: rgba(91, 108, 255, 0.06);
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 3rem;
+      padding: 1.5rem 0 0.75rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="site-title">
+        <span>Your Name</span> <!-- TODO: put your name -->
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Papers</a>
+        <a href="#cv">CV</a>
+      </nav>
+
+      <div class="social-links" aria-label="External profiles">
+        <!-- TODO: replace # with your actual links -->
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="cv.pdf" target="_blank" rel="noopener" aria-label="CV">
+          <i class="fa-regular fa-file-lines"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- HERO / ABOUT -->
+      <section id="about" class="hero">
+        <div class="hero-card">
+          <div class="hero-photo-wrapper">
+            <!-- TODO: replace src with your actual photo (e.g., /images/me.jpg) -->
+            <img src="your-photo.jpg" alt="Portrait of Your Name" class="hero-photo" />
+          </div>
+
+          <div class="hero-text">
+            <h1>Your Name</h1>
+            <div class="subtitle">
+              PhD Student, Computer & Information Science · University of Pennsylvania
+            </div>
+
+            <div class="pill-row">
+              <span class="pill">AI / Machine Learning</span>
+              <span class="pill">Uncertainty Quantification</span>
+              <span class="pill">Conformal Prediction</span>
+              <span class="pill">Human–AI Collaboration</span>
+            </div>
+
+            <p>
+              I am a PhD student in AI/ML at the University of Pennsylvania. My research focuses on
+              uncertainty quantification for modern machine learning systems, including generative
+              models (LLMs), and on how to design principled, reliable uncertainty estimates when
+              humans and AI systems interact to make decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH SECTION -->
+      <section id="research">
+        <div class="section-card">
+          <h2>Research</h2>
+          <p class="section-description">
+            I am broadly interested in reliable AI, with a focus on:
+          </p>
+          <ul>
+            <li>Conformal prediction and distribution-free uncertainty quantification.</li>
+            <li>Uncertainty for generative models and large language models.</li>
+            <li>Human–AI collaborative decision making and evaluation.</li>
+            <li>Sequential / online settings and robustness to distribution shift.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PAPERS / PUBLICATIONS -->
+      <section id="publications">
+        <div class="section-card">
+          <h2>Papers</h2>
+          <p class="section-description">
+            Selected works. For a full and up-to-date list, see my
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>.
+          </p>
+
+          <ul class="pub-list">
+            <!-- Example item; copy for each paper -->
+            <li class="pub-item">
+              <div class="pub-title">
+                Conformal Prediction Beyond the Seen: A Missing Mass Perspective for Uncertainty Quantification in Generative Models
+              </div>
+              <div class="pub-authors">
+                <strong>Your Name</strong>, Coauthor A, Coauthor B
+              </div>
+              <div class="pub-venue">
+                Conference Name, 202X
+                &nbsp;·&nbsp;
+                <a href="https://arxiv.org/" target="_blank" rel="noopener">paper</a>
+                &nbsp;·&nbsp;
+                <a href="https://github.com/" target="_blank" rel="noopener">code</a>
+              </div>
+            </li>
+
+            <!-- Add more <li> blocks for other papers -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- CV SECTION -->
+      <section id="cv">
+        <div class="section-card">
+          <h2>Curriculum Vitae</h2>
+          <p class="section-description">
+            You can find a concise overview of my research, publications, and professional
+            experience in my CV.
+          </p>
+
+          <div class="cv-actions">
+            <!-- TODO: put your actual CV file name in href (and ensure it's in the repo root) -->
+            <a class="btn-primary" href="cv.pdf" target="_blank" rel="noopener">
+              <i class="fa-regular fa-file-lines"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+
+            <a class="btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>View LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="year"></span> Your Name. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
