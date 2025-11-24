@@ -58,11 +58,11 @@
   
   /* floating middle pane */
   .page-panel {
-    background: rgba(255, 255, 255, 0.94);
-    border-radius: 26px;
-    padding: 2.4rem 2.1rem 2.6rem;
-    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.9);
+    /* no box, just some vertical spacing */
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 2.4rem 0 2.6rem;
   }
   
   @media (max-width: 640px) {
@@ -217,7 +217,7 @@ main {
     gap: 0.6rem;
     margin-top: 0.1rem;
   }
-  
+
   .hero-links img {
     width: 28px;
     height: 28px;
@@ -300,6 +300,30 @@ main {
   .paper-item + .paper-item {
     margin-top: 1.6rem;
   }
+  .paper-figure {
+    flex: 0 0 220px;
+    margin-right: 1rem;
+  }
+  
+  .paper-figure img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 18px;
+    display: block;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.28);
+  }
+  
+  @media (max-width: 700px) {
+    .paper-item {
+      flex-direction: column;
+    }
+    .paper-figure {
+      margin-right: 0;
+      margin-bottom: 0.75rem;
+      align-self: center;
+    }
+  }
+  
   
   /* small thumbnail; on home page you can omit the <img> entirely if you want */
   .paper-thumb {
