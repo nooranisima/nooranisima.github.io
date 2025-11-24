@@ -5,9 +5,10 @@
   <title>Sima Noorani – AI/ML PhD Student</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Personal website of Sima Noorani, PhD student in AI/ML at the University of Pennsylvania." />
+
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- icons -->
+  <!-- fonts & icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -47,26 +48,121 @@
       </div>
     </div>
   </header>
-
   <main>
-    <div class="container hero">
-      <!-- put your real image in img/sima.jpg -->
-      <img src="img/photo.jpg" alt="Portrait of Sima Noorani" class="hero-photo" />
+    <div class="container page-panel">
+      <div class="hero">
+        <div class="hero-layout">
+          <!-- LEFT: text / bio -->
+          <div class="hero-text">
+            <h1>Sima Noorani</h1>
+            <div class="subtitle">
+              Ph.D. student at the University of Pennsylvania
+            </div>
+            <div class="advisors">
+              Advised by
+              <a href="https://www.georgejpappas.org/" target="_blank" rel="noopener">George J. Pappas</a>
+              and
+              <a href="https://www.seas.upenn.edu/~hassani/" target="_blank" rel="noopener">Hamed Hassani</a>.
+            </div>
 
-      <h1>Sima Noorani</h1>
-      <div class="subtitle">
-        Ph.D. Student · Computer & Information Science · University of Pennsylvania
+            <p class="bio">
+              I am a Ph.D. student at the University of Pennsylvania working at the intersection of
+              machine learning, uncertainty quantification, and conformal prediction. I am broadly
+              interested in how to produce reliable uncertainty estimates for modern ML systems,
+              including generative models, as well as how these ideas extend to human–AI interactions
+              where people and AI collaboratively reason and make decisions. Prior to graduate school,
+              I studied electrical engineering and computer science and interned at Lockheed Martin,
+              Comcast, and Bristol Myers Squibb.
+            </p>
+          </div>
+
+          <!-- RIGHT: photo + icon links -->
+          <div class="hero-photo-column">
+            <!-- make sure img/sima.jpg exists and is your actual headshot -->
+            <img src="img/sima.jpg" alt="Portrait of Sima Noorani" class="hero-photo" />
+
+            <div class="hero-links">
+              <!-- TODO: put your real profile links instead of # -->
+              <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="https://github.com/nooranisima" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="files/cv.pdf" target="_blank" rel="noopener" class="cv-pill" aria-label="CV">
+                cv
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <p class="bio">
-        I am a Ph.D. student at the University of Pennsylvania working at the intersection of
-        machine learning, uncertainty quantification, and conformal prediction. I am broadly
-        interested in how to produce reliable uncertainty estimates for modern ML systems,
-        including generative models, as well as how these ideas extend to human–AI interactions
-        where people and AI collaboratively reason and make decisions. Prior to graduate school,
-        I studied electrical engineering and computer science and interned at Lockheed Martin,
-        Comcast, and Bristol Myers Squibb.
-      </p>
+      <!-- PAPERS UNDER BIO ON THE HOME PAGE -->
+      <section class="home-papers">
+        <h2>Papers</h2>
+
+        <div class="papers-list">
+
+          <div class="paper-item">
+            <div class="paper-text">
+              <div class="paper-title">
+                Conformal Prediction Beyond the Seen: A Missing Mass Perspective for Uncertainty Quantification in Generative Models
+              </div>
+              <div class="paper-authors">
+                <span class="me">S. Noorani</span>*, S. Kiyani*, G. J. Pappas, H. Hassani
+              </div>
+              <div class="paper-venue">
+                Neural Information Processing Systems (NeurIPS), 2025.
+                Also accepted to the R2-FM Workshop at ICML 2025.
+                <span class="paper-links">
+                  [<a href="https://arxiv.org/pdf/2506.05497.pdf" target="_blank" rel="noopener">pdf</a>]
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <div class="paper-text">
+              <div class="paper-title">
+                Conformal Risk Minimization with Variance Reduction
+              </div>
+              <div class="paper-authors">
+                <span class="me">S. Noorani</span>, O. Romero, N. Dal Fabbro, H. Hassani, G. J. Pappas
+              </div>
+              <div class="paper-venue">
+                In submission. Also accepted to the R2-FM Workshop at ICML 2025.
+                <span class="paper-links">
+                  [<a href="https://arxiv.org/pdf/2411.01696.pdf" target="_blank" rel="noopener">pdf</a>]
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <div class="paper-text">
+              <div class="paper-title">
+                Human–AI Collaborative Uncertainty Quantification
+              </div>
+              <div class="paper-authors">
+                <span class="me">S. Noorani</span>*, S. Kiyani*, G. J. Pappas, H. Hassani
+              </div>
+              <div class="paper-venue">
+                arXiv:2510.23476, 2025.
+                <span class="paper-links">
+                  [<a href="https://www.arxiv.org/pdf/2510.23476.pdf" target="_blank" rel="noopener">pdf</a>]
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   </main>
 
