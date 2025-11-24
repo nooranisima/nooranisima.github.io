@@ -218,6 +218,13 @@ main {
     margin-top: 0.1rem;
   }
   
+  .hero-links img {
+    width: 28px;
+    height: 28px;
+    display: block;
+  }
+  
+  
   .hero-links a {
     width: 2.4rem;
     height: 2.4rem;
