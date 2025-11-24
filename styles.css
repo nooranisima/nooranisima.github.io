@@ -378,6 +378,18 @@ main {
     }
   }
   
+ /* links in News & Talks: red + underlined */
+.home-news .news-text a {
+    color: #d9480f;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .home-news .news-text a:hover {
+    color: #b43b07;
+  }
+  
+  
   /* ---------- Footer ---------- */
   
   footer {
