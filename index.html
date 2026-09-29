@@ -9,22 +9,6 @@
 
 <link rel="stylesheet" href="styles.css" />
 
-<!-- extra styles for paper venue lines (you can move these into styles.css later) -->
-<style>
-  .paper-conf {
-    font-weight: 700;
-    margin-top: 4px;
-  }
-  .paper-workshop {
-    font-weight: 700;
-    color: #2563eb; /* change this hex code to any color you like */
-    margin-top: 2px;
-  }
-  .paper-links-line {
-    margin-top: 4px;
-  }
-</style>
-
 <!-- fonts & icons -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,11 +119,18 @@
       </div>
     </div>
 
-    <!-- NEWS & TALKS (newest first) -->
+    <!-- NEWS & TALKS (newest first, scrollable box) -->
     <section class="home-news">
       <h2>News &amp; Talks</h2>
 
       <ul class="news-list">
+
+        <li class="news-item">
+          <span class="news-date">Sep 2026</span>
+          <span class="news-text">
+            <em>“Strategic Decision Support for AI Agents”</em> accepted to NeurIPS 2026.
+          </span>
+        </li>
 
         <li class="news-item">
           <span class="news-date">Jul 2026</span>
@@ -191,11 +182,36 @@
       </ul>
     </section>
 
-    <!-- PAPERS UNDER BIO ON THE HOME PAGE (newest first) -->
+    <!-- PAPERS (newest first, no scrolling) -->
     <section class="home-papers">
       <h2>Papers</h2>
 
       <div class="papers-list">
+
+        <!-- ===== Strategic Decision Support for AI Agents ===== -->
+        <div class="paper-item">
+          <div class="paper-text">
+            <div class="paper-title">
+              Strategic Decision Support for AI Agents
+            </div>
+            <div class="paper-authors">
+              S. Kiyani*, <span class="me">S. Noorani</span>*, G. J. Pappas, H. Hassani
+            </div>
+            <div class="paper-conf">
+              NeurIPS 2026.
+            </div>
+            <!-- If it was also at a workshop, uncomment and edit:
+            <div class="paper-workshop">
+              Workshop name here.
+            </div>
+            -->
+            <div class="paper-links-line">
+              <span class="paper-links">
+                [<a href="https://arxiv.org/pdf/2606.12587" target="_blank" rel="noopener">pdf</a>]
+              </span>
+            </div>
+          </div>
+        </div>
 
         <!-- ===== Human–AI Collaborative UQ ===== -->
         <div class="paper-item">
