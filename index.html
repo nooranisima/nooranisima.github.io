@@ -1,226 +1,328 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="t_EoOr1tFSF39oSgZmfVTZ5byvdVg9xthSJynylYc_w" />
-  <meta charset="UTF-8" />
-  <title>Sima Noorani – AI/ML PhD Student</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Personal website of Sima Noorani, PhD student in AI/ML at the University of Pennsylvania." />
+<meta name="google-site-verification" content="t_EoOr1tFSF39oSgZmfVTZ5byvdVg9xthSJynylYc_w" />
+<meta charset="UTF-8" />
+<title>Sima Noorani – AI/ML PhD Student</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Personal website of Sima Noorani, PhD student in AI/ML at the University of Pennsylvania." />
 
-  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css" />
 
-  <!-- fonts & icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13Z5fgx5w4nXW/5xg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+<!-- extra styles for paper venue lines (you can move these into styles.css later) -->
+<style>
+  .paper-conf {
+    font-weight: 700;
+    margin-top: 4px;
+  }
+  .paper-workshop {
+    font-weight: 700;
+    color: #2563eb; /* change this hex code to any color you like */
+    margin-top: 2px;
+  }
+  .paper-links-line {
+    margin-top: 4px;
+  }
+</style>
+
+<!-- fonts & icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13Z5fgx5w4nXW/5xg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="site-name">Sima Noorani</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="site-name">Sima Noorani</div>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="papers/">Papers</a>
-        <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
-      </nav>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="papers/">Papers</a>
+      <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
 
-      <div class="social">
-        <!-- TODO: put your real links below -->
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
-          <i class="fa-brands fa-google"></i>
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://github.com/nooranisima" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
+    <div class="social">
+      <!-- TODO: put your real links below -->
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <i class="fa-brands fa-google"></i>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://github.com/nooranisima" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
     </div>
-  </header>
-  <main>
-    <div class="container page-panel">
-      <div class="hero">
-        <div class="hero-layout">
-          <!-- LEFT: text / bio -->
-          <div class="hero-text">
-            <h1>Sima Noorani</h1>
-            <div class="subtitle">
-              Ph.D. student at the University of Pennsylvania
-            </div>
-            <div class="advisors">
-              Advised by
-              <a href="https://www.seas.upenn.edu/~hassani/" target="_blank" rel="noopener">Hamed Hassani</a>.
-              and
-              <a href="https://www.georgejpappas.org/" target="_blank" rel="noopener">George J. Pappas</a>
-            </div>
+  </div>
+</header>
 
-            <p class="bio">
-              I am a Ph.D. student at the University of Pennsylvania working at the intersection of
-              machine learning, uncertainty quantification, and conformal prediction. I am broadly
-              interested in how to produce reliable uncertainty estimates for modern ML systems,
-              including generative models, as well as how these ideas extend to human–AI interactions
-              where people and AI collaboratively reason and make decisions. Prior to graduate school,
-              I studied electrical engineering and computer science and interned at Lockheed Martin,
-              Comcast, and Bristol Myers Squibb.
-            </p>
+<main>
+  <div class="container page-panel">
+
+    <div class="hero">
+      <div class="hero-layout">
+
+        <!-- LEFT: text / bio -->
+        <div class="hero-text">
+          <h1>Sima Noorani</h1>
+
+          <div class="subtitle">
+            Ph.D. student at the University of Pennsylvania
           </div>
 
-          <!-- RIGHT: photo + icon links -->
-          <div class="hero-photo-column">
-            <!-- make sure img/sima.jpg exists and is your actual headshot -->
-            <img src="img/photo.jpg" alt="Portrait of Sima Noorani" class="hero-photo" />
+          <div class="advisors">
+            Advised by
+            <a href="https://www.seas.upenn.edu/~hassani/" target="_blank" rel="noopener">Hamed Hassani</a>
+            and
+            <a href="https://www.georgejpappas.org/" target="_blank" rel="noopener">George J. Pappas</a>
+          </div>
 
-            <div class="hero-links">
-              <!-- Twitter -->
-              <a href="https://twitter.com/NooraniSimaa" target="_blank" rel="noopener" aria-label="Twitter / X">
-                <img src="img/icons/twitter-black.png" alt="Twitter icon" />
-              </a>
-            
-              <!-- Google Scholar -->
-              <a href="https://scholar.google.com/citations?hl=en&user=eRwGoqEAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
-                <img src="img/icons/scholar-black.png" alt="Google Scholar icon" />
-              </a>
-            
-              <!-- GitHub -->
-              <a href="https://github.com/nooranisima" target="_blank" rel="noopener" aria-label="GitHub">
-                <img src="img/icons/github-black.png" alt="GitHub icon" />
-              </a>
-            
-              <!-- LinkedIn -->
-              <a href="https://www.linkedin.com/in/sima-noorani-467480182/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <img src="img/icons/linkedin-black.png" alt="LinkedIn icon" />
-              </a>
-            
-              <!-- CV -->
-              <a href="files/cv.pdf" target="_blank" rel="noopener" aria-label="CV" class="cv-pill">
-                <img src="img/icons/pdf-black.png" alt="CV icon" />
-              </a>
-            </div>
-            
+          <p class="bio">
+            I am a Ph.D. student at the University of Pennsylvania working at the intersection of
+            machine learning, uncertainty quantification, and conformal prediction. I am broadly
+            interested in how to produce reliable uncertainty estimates for modern ML systems,
+            including generative models, as well as how these ideas extend to human–AI interactions
+            where people and AI collaboratively reason and make decisions. Prior to graduate school,
+            I studied electrical engineering and computer science and interned at Lockheed Martin,
+            Comcast, and Bristol Myers Squibb.
+          </p>
+        </div>
+
+        <!-- RIGHT: photo + icon links -->
+        <div class="hero-photo-column">
+          <!-- make sure img/sima.jpg exists and is your actual headshot -->
+          <img src="img/photo.jpg" alt="Portrait of Sima Noorani" class="hero-photo" />
+
+          <div class="hero-links">
+            <!-- Twitter -->
+            <a href="https://twitter.com/NooraniSimaa" target="_blank" rel="noopener" aria-label="Twitter / X">
+              <img src="img/icons/twitter-black.png" alt="Twitter icon" />
+            </a>
+
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?hl=en&user=eRwGoqEAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+              <img src="img/icons/scholar-black.png" alt="Google Scholar icon" />
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/nooranisima" target="_blank" rel="noopener" aria-label="GitHub">
+              <img src="img/icons/github-black.png" alt="GitHub icon" />
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/sima-noorani-467480182/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="img/icons/linkedin-black.png" alt="LinkedIn icon" />
+            </a>
+
+            <!-- CV -->
+            <a href="files/cv.pdf" target="_blank" rel="noopener" aria-label="CV" class="cv-pill">
+              <img src="img/icons/pdf-black.png" alt="CV icon" />
+            </a>
           </div>
         </div>
+
       </div>
-
-            <!-- NEWS & TALKS -->
-<section class="home-news">
-  <h2>News &amp; Talks</h2>
-
-  <ul class="news-list">
-    <li class="news-item">
-      <span class="news-date">Nov 2025</span>
-      <span class="news-text">
-        <em>Here are my slides on "Uncertainty Quantification for Generative &amp; Collaborative AI"</em> presented at Max Planck Institute for Software Systems.
-        <a href="files/slides/cpq-hai-max-planck-nov-2025.pdf" target="_blank" rel="noopener">slides</a>
-      </span>
-    </li>
-
-    <li class="news-item">
-      <span class="news-date">Nov 2025</span>
-      <span class="news-text">
-        Here are my slides on <em>“Human–AI Collaborative Uncertainty Quantification”</em> presented at the
-        Berkeley ANSR Reading Group.
-        <a href="files/slides/hai-berkeley-ansr-nov-2025.pdf" target="_blank" rel="noopener">slides</a>
-      </span>
-    </li>
-
-    <li class="news-item">
-      <span class="news-date">Oct 2025</span>
-      <span class="news-text">
-        <em>“Conformal Prediction Beyond the Seen”</em> accepted to
-        NeurIPS 2025.
-        <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118606"
-           target="_blank" rel="noopener">SlidesLive</a>
-      </span>
-    </li>
-
-    <!-- To add a new talk/news item, copy-paste one <li> and edit the date/text/slide link -->
-  </ul>
-</section>
-
-      
-
-      <!-- PAPERS UNDER BIO ON THE HOME PAGE -->
-      <section class="home-papers">
-        <h2>Papers</h2>
-
-        <div class="papers-list">
-
-          <div class="paper-item">
-            <div class="paper-text">
-              <div class="paper-title">
-                Conformal Prediction Beyond the Seen: A Missing Mass Perspective for Uncertainty Quantification in Generative Models
-              </div>
-              <div class="paper-authors">
-                <span class="me">S. Noorani</span>*, S. Kiyani*, G. J. Pappas, H. Hassani
-              </div>
-              <div class="paper-venue">
-                Neural Information Processing Systems (NeurIPS), 2025.
-                Also accepted to the R2-FM Workshop at ICML 2025.
-                <span class="paper-links">
-                  [<a href="https://arxiv.org/pdf/2506.05497.pdf" target="_blank" rel="noopener">pdf</a>]
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="paper-item">
-            <div class="paper-text">
-              <div class="paper-title">
-                Conformal Risk Minimization with Variance Reduction
-              </div>
-              <div class="paper-authors">
-                <span class="me">S. Noorani</span>, O. Romero, N. Dal Fabbro, H. Hassani, G. J. Pappas
-              </div>
-              <div class="paper-venue">
-                In submission. Also accepted to the R2-FM Workshop at ICML 2025.
-                <span class="paper-links">
-                  [<a href="https://arxiv.org/pdf/2411.01696.pdf" target="_blank" rel="noopener">pdf</a>]
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="paper-item">
-            <div class="paper-text">
-              <div class="paper-title">
-                Human–AI Collaborative Uncertainty Quantification
-              </div>
-              <div class="paper-authors">
-                <span class="me">S. Noorani</span>*, S. Kiyani*, G. J. Pappas, H. Hassani
-              </div>
-              <div class="paper-venue">
-                arXiv:2510.23476, 2025.
-                <span class="paper-links">
-                  [<a href="https://www.arxiv.org/pdf/2510.23476.pdf" target="_blank" rel="noopener">pdf</a>]
-                </span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
     </div>
-  </main>
 
-  <footer>
-    &copy; <span id="year"></span> Sima Noorani.
-  </footer>
+    <!-- NEWS & TALKS (newest first) -->
+    <section class="home-news">
+      <h2>News &amp; Talks</h2>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      <ul class="news-list">
+
+        <li class="news-item">
+          <span class="news-date">Jul 2026</span>
+          <span class="news-text">
+            <em>“Human–AI Collaborative Uncertainty Quantification”</em> selected as a
+            <strong>spotlight</strong> at the Statistical Frameworks for Uncertainty in Agentic Systems
+            Workshop at ICML 2026.
+          </span>
+        </li>
+
+        <li class="news-item">
+          <span class="news-date">May 2026</span>
+          <span class="news-text">
+            <em>“When to Trust the Cheap Check: Weak and Strong Verification for Reasoning”</em> accepted to
+            ICML 2026 as a <strong>spotlight</strong>.
+          </span>
+        </li>
+
+        <li class="news-item">
+          <span class="news-date">Nov 2025</span>
+          <span class="news-text">
+            <em>Here are my slides on "Uncertainty Quantification for Generative &amp; Collaborative AI"</em> presented at Max Planck Institute for Software Systems.
+            <a href="files/slides/cpq-hai-max-planck-nov-2025.pdf" target="_blank" rel="noopener">slides</a>
+          </span>
+        </li>
+
+        <li class="news-item">
+          <span class="news-date">Nov 2025</span>
+          <span class="news-text">
+            Here are my slides on <em>“Human–AI Collaborative Uncertainty Quantification”</em> presented at the
+            Berkeley ANSR Reading Group.
+            <a href="files/slides/hai-berkeley-ansr-nov-2025.pdf" target="_blank" rel="noopener">slides</a>
+          </span>
+        </li>
+
+        <li class="news-item">
+          <span class="news-date">Oct 2025</span>
+          <span class="news-text">
+            <em>“Conformal Prediction Beyond the Seen”</em> accepted to
+            NeurIPS 2025.
+            <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118606"
+               target="_blank" rel="noopener">SlidesLive</a>
+          </span>
+        </li>
+
+        <!-- To add a new talk/news item, copy-paste one <li> and edit the date/text/slide link.
+             Put the newest items at the top. -->
+
+      </ul>
+    </section>
+
+    <!-- PAPERS UNDER BIO ON THE HOME PAGE (newest first) -->
+    <section class="home-papers">
+      <h2>Papers</h2>
+
+      <div class="papers-list">
+
+        <!-- ===== Human–AI Collaborative UQ ===== -->
+        <div class="paper-item">
+          <div class="paper-text">
+            <div class="paper-title">
+              Human–AI Collaborative Uncertainty Quantification
+            </div>
+            <div class="paper-authors">
+              <span class="me">S. Noorani</span>*, S. Kiyani*, G. J. Pappas, H. Hassani
+            </div>
+            <div class="paper-conf">
+              ICML, 2026.
+            </div>
+            <div class="paper-workshop">
+              Spotlight at the Statistical Frameworks for Uncertainty in Agentic Systems Workshop at ICML 2026.
+            </div>
+            <div class="paper-links-line">
+              <span class="paper-links">
+                [<a href="https://www.arxiv.org/pdf/2510.23476.pdf" target="_blank" rel="noopener">pdf</a>]
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Multi-Round Human–AI Collaboration ===== -->
+        <div class="paper-item">
+          <div class="paper-text">
+            <div class="paper-title">
+              Multi-Round Human–AI Collaboration with User-Specified Requirements
+            </div>
+            <div class="paper-authors">
+              <span class="me">S. Noorani</span>*, S. Kiyani*, H. Hassani, G. J. Pappas
+            </div>
+            <div class="paper-conf">
+              ICML, 2026.
+            </div>
+            <!-- If it was also at a workshop, uncomment and edit the next 3 lines:
+            <div class="paper-workshop">
+              Workshop name here at ICML 2026.
+            </div>
+            -->
+            <div class="paper-links-line">
+              <span class="paper-links">
+                [<a href="https://arxiv.org/pdf/2602.17646" target="_blank" rel="noopener">pdf</a>]
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== When to Trust the Cheap Check ===== -->
+        <div class="paper-item">
+          <div class="paper-text">
+            <div class="paper-title">
+              When to Trust the Cheap Check: Weak and Strong Verification for Reasoning
+            </div>
+            <div class="paper-authors">
+              S. Kiyani, <span class="me">S. Noorani</span>, G. J. Pappas, H. Hassani
+            </div>
+            <div class="paper-conf">
+              ICML 2026 (Spotlight).
+            </div>
+            <!-- Add a pdf link here once you have one:
+            <div class="paper-links-line">
+              <span class="paper-links">[<a href="LINK" target="_blank" rel="noopener">pdf</a>]</span>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <!-- ===== Conformal Prediction Beyond the Seen ===== -->
+        <div class="paper-item">
+          <div class="paper-text">
+            <div class="paper-title">
+              Conformal Prediction Beyond the Seen: A Missing Mass Perspective for Uncertainty Quantification in Generative Models
+            </div>
+            <div class="paper-authors">
+              <span class="me">S. Noorani</span>*, S. Kiyani*, G. J. Pappas, H. Hassani
+            </div>
+            <div class="paper-conf">
+              NeurIPS 2025.
+            </div>
+            <div class="paper-workshop">
+              Also accepted to the R2-FM Workshop at ICML 2025.
+            </div>
+            <div class="paper-links-line">
+              <span class="paper-links">
+                [<a href="https://arxiv.org/pdf/2506.05497.pdf" target="_blank" rel="noopener">pdf</a>]
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Conformal Risk Minimization with Variance Reduction ===== -->
+        <div class="paper-item">
+          <div class="paper-text">
+            <div class="paper-title">
+              Conformal Risk Minimization with Variance Reduction
+            </div>
+            <div class="paper-authors">
+              <span class="me">S. Noorani</span>, O. Romero, N. Dal Fabbro, H. Hassani, G. J. Pappas
+            </div>
+            <div class="paper-conf">
+              UAI 2026.
+            </div>
+            <div class="paper-workshop">
+              Also accepted to the R2-FM Workshop at ICML 2025.
+            </div>
+            <div class="paper-links-line">
+              <span class="paper-links">
+                [<a href="https://arxiv.org/pdf/2411.01696.pdf" target="_blank" rel="noopener">pdf</a>]
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Sima Noorani.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
