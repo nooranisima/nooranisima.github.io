@@ -5,6 +5,7 @@
   --border: #e5e7eb;
   --workshop: #0f766e;
   --max-width: 880px;
+  --page-bg: #e8f4fc;
 }
 
 * {
@@ -21,7 +22,7 @@ body {
   color: var(--text-main);
   line-height: 1.7;
   min-height: 100vh;
-  background: #ffffff;
+  background: var(--page-bg);
 }
 
 a {
